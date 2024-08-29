@@ -36,4 +36,4 @@ class LearnableSelector(nn.Module):
 
         logit_mask = self.mlp(combined_input).squeeze(-1)
 
-        return self.sigmoid(logit_mask) > self.threshold = threshold
+        return self.sigmoid(logit_mask) > self.threshold

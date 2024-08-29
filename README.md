@@ -21,7 +21,7 @@ pip install git+https://github.com/mit-han-lab/torchsparse
 
 ### Data Preparation
 
-To prepare the data, first download the [Cityscapes](https://www.cityscapes-dataset.com/) dataset and place it in the folder */dataset/cityscapes*. Next, you will need to produce low-resolution logits for various models and place them in the folder */dataset/cityscapes-preds*. We have released the low-resolution trained model weights and the respective configurations on our [HuggingFace Page](https://huggingface.co/mit-han-lab/SparseRefine). Once you have completed these steps, you will see the following directory structure.
+To prepare the data, first download the [Cityscapes](https://www.cityscapes-dataset.com/) dataset and place it in the folder */dataset/cityscapes*. Next, you will need to produce low-resolution logits for various models and place them in the folder */dataset/cityscapes-preds*. We have released the low-resolution trained model weights and the respective configurations on our [HuggingFace Page](https://huggingface.co/mit-han-lab/SparseRefine). These can be directly used to produce the low-resolution logits. Once you have completed these steps, you will see the following directory structure.
 
 ```
 dataset
