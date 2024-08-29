@@ -52,6 +52,21 @@ For debugging purpose, you can run
 ```
 and it will not create a run directory and a wandb run.
 
+
+## Reference
+
+If you find SparseRefine useful or relevant to your research, please kindly cite our paper:
+
+```bibtex
+@article{liu2024sparse,
+  title={Sparse Refinement for Efficient High-Resolution Semantic Segmentation},
+  author={Liu, Zhijian and Zhang, Zhuoyang and Khaki, Samir and Yang, Shang and Tang, Haotian and Xu, Chenfeng and Keutzer, Kurt and Han, Song},
+  journal={arXiv preprint arXiv:2407.19014},
+  year={2024}
+}
+```
+
+
 ## Related Projects
 [TorchSparse: Efficient Point Cloud Inference Engine](https://github.com/mit-han-lab/torchsparse)
 
