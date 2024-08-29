@@ -1,0 +1,25 @@
+baseline: ???
+num_classes: 19
+ignore_index: 255
+
+loaders:
+  train:
+    _target_: torch.utils.data.DataLoader
+    dataset:
+      _target_: sparse2d.datasets.Cityscapes
+      root: /dataset/cityscapes/
+      prediction_dir: /dataset/cityscapes-preds/${data.baseline}/
+      split: train
+    batch_size: 4
+    num_workers: 4
+    shuffle: true
+  val:
+    _target_: torch.utils.data.DataLoader
+    dataset:
+      _target_: sparse2d.datasets.Cityscapes
+      root: /dataset/cityscapes/
+      prediction_dir: /dataset/cityscapes-preds/${data.baseline}/
+      split: val
+    batch_size: 4
+    num_workers: 4
+    shuffle: false

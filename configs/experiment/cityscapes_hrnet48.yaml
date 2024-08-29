@@ -1,0 +1,21 @@
+# @package _global_
+
+defaults:
+  - override /data: cityscapes
+  - override /model: default
+  - override /optimizer: adamw
+  - override /scheduler: cosine
+
+data:
+  baseline: fcn-hr48-4xb2-512x1024-80k
+
+model:
+  selector:
+    threshold: 0.3
+
+trainer:
+  max_epochs: 500
+
+optimizer:
+  lr: 3.0e-4
+  weight_decay: 0.05

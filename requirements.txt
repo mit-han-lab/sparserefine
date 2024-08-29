@@ -1,0 +1,7 @@
+-f https://download.openmmlab.com/mmcv/dist/cu117/torch2.0/index.html
+hydra-core
+lightning
+mmcv==2.0.0
+spconv-cu117
+tensorboardX
+wandb

@@ -1,0 +1,21 @@
+# @package _global_
+
+defaults:
+  - override /data: cityscapes
+  - override /model: default
+  - override /optimizer: adamw
+  - override /scheduler: cosine
+
+data:
+  baseline: mask2former-swinl-8xb2-512x1024-90k
+
+model:
+  selector:
+    threshold: 0.005
+
+trainer:
+  max_epochs: 500
+
+optimizer:
+  lr: 3.0e-4
+  weight_decay: 0.05

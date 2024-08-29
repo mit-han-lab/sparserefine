@@ -1,0 +1,25 @@
+_target_: sparse2d.models.SparseRefiner
+
+selector:
+  _target_: sparse2d.models.selectors.EntropySelector
+  threshold: ???
+
+featurizer:
+  _target_: sparse2d.models.featurizers.TorchSparseFeaturizer
+  features: ["rgb"]
+  is_half: False
+
+backbone:
+  _target_: sparse2d.models.backbones.TorchSparseUNet
+  in_channels: 3
+  reps: [2, 2, 2, 2, 2, 2]
+  nPlanes: [32, 64, 128, 256, 512, 1024]
+
+classifier:
+  _target_: torch.nn.Linear
+  in_features: 32
+  out_features: ${data.num_classes}
+
+ensembler:
+  _target_: sparse2d.models.ensemblers.GatedEnsembler
+  num_classes: ${data.num_classes}

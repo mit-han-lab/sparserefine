@@ -1,0 +1,17 @@
+macc/i/mask:
+  _target_: sparse2d.metrics.Accuracy
+  output_key: logits/i/mask
+  target_key: label/mask
+  ignore_index: ${data.ignore_index}
+
+macc/o/mask:
+  _target_: sparse2d.metrics.Accuracy
+  output_key: logits/o/mask
+  target_key: label/mask
+  ignore_index: ${data.ignore_index}
+
+macc/e/mask:
+  _target_: sparse2d.metrics.Accuracy
+  output_key: logits/e/mask
+  target_key: label/mask
+  ignore_index: ${data.ignore_index}
