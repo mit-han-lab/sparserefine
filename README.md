@@ -12,7 +12,7 @@
 ```
 git clone https://github.com/mit-han-lab/sparserefine.git
 cd sparserefine
-conda create -n sparserefine python=3.9
+conda create -n sparserefine python=3.10
 pip install -r requirements.txt
 pip install git+https://github.com/mit-han-lab/torchsparse
 ```

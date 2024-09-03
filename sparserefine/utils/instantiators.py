@@ -3,7 +3,7 @@ from hydra.utils import instantiate
 from omegaconf import DictConfig
 from torchmetrics import MetricCollection
 
-from sparse2d.losses import LossCollection
+from sparserefine.losses import LossCollection
 
 from .modules import DataModule, ModelModule
 

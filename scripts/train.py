@@ -4,7 +4,7 @@ import hydra
 import lightning as L
 from omegaconf import DictConfig, OmegaConf
 
-from sparse2d.utils import instantiate_data, instantiate_model, instantiate_trainer
+from sparserefine.utils import instantiate_data, instantiate_model, instantiate_trainer
 
 CONFIG_PATH = os.path.join(os.getcwd(), "configs")
 CONFIG_NAME = "default.yaml"

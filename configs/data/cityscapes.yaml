@@ -6,7 +6,7 @@ loaders:
   train:
     _target_: torch.utils.data.DataLoader
     dataset:
-      _target_: sparse2d.datasets.Cityscapes
+      _target_: sparserefine.datasets.Cityscapes
       root: /dataset/cityscapes/
       prediction_dir: /dataset/cityscapes-preds/${data.baseline}/
       split: train
@@ -16,7 +16,7 @@ loaders:
   val:
     _target_: torch.utils.data.DataLoader
     dataset:
-      _target_: sparse2d.datasets.Cityscapes
+      _target_: sparserefine.datasets.Cityscapes
       root: /dataset/cityscapes/
       prediction_dir: /dataset/cityscapes-preds/${data.baseline}/
       split: val

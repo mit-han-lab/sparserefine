@@ -1,12 +1,12 @@
 modules:
   xent/o/mask:
-    _target_: sparse2d.losses.CrossEntropyLoss
+    _target_: sparserefine.losses.CrossEntropyLoss
     output_key: logits/o/mask
     target_key: label/mask
     ignore_index: ${data.ignore_index}
 
   xent/e/mask:
-    _target_: sparse2d.losses.CrossEntropyLoss
+    _target_: sparserefine.losses.CrossEntropyLoss
     output_key: logits/e/mask
     target_key: label/mask
     ignore_index: ${data.ignore_index}

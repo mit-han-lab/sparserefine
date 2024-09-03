@@ -7,7 +7,7 @@ from torch.optim import Optimizer
 from torch.optim.lr_scheduler import LRScheduler
 from torchmetrics import MetricCollection
 import torch
-from sparse2d.losses import LossCollection
+from sparserefine.losses import LossCollection
 import torch.distributed as dist
 
 __all__ = ["ModelModule"]

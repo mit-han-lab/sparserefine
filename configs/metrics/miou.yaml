@@ -1,40 +1,40 @@
 miou/i/mask:
-  _target_: sparse2d.metrics.JaccardIndex
+  _target_: sparserefine.metrics.JaccardIndex
   output_key: logits/i/mask
   target_key: label/mask
   num_classes: ${data.num_classes}
   ignore_index: ${data.ignore_index}
 
 miou/i/full:
-  _target_: sparse2d.metrics.JaccardIndex
+  _target_: sparserefine.metrics.JaccardIndex
   output_key: logits/i/full
   target_key: label/full
   num_classes: ${data.num_classes}
   ignore_index: ${data.ignore_index}
 
 miou/o/mask:
-  _target_: sparse2d.metrics.JaccardIndex
+  _target_: sparserefine.metrics.JaccardIndex
   output_key: logits/o/mask
   target_key: label/mask
   num_classes: ${data.num_classes}
   ignore_index: ${data.ignore_index}
 
 miou/o/full:
-  _target_: sparse2d.metrics.JaccardIndex
+  _target_: sparserefine.metrics.JaccardIndex
   output_key: logits/o/full
   target_key: label/full
   num_classes: ${data.num_classes}
   ignore_index: ${data.ignore_index}
 
 miou/e/mask:
-  _target_: sparse2d.metrics.JaccardIndex
+  _target_: sparserefine.metrics.JaccardIndex
   output_key: logits/e/mask
   target_key: label/mask
   num_classes: ${data.num_classes}
   ignore_index: ${data.ignore_index}
 
 miou/e/full:
-  _target_: sparse2d.metrics.JaccardIndex
+  _target_: sparserefine.metrics.JaccardIndex
   output_key: logits/e/full
   target_key: label/full
   num_classes: ${data.num_classes}

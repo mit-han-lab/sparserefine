@@ -1,12 +1,12 @@
 modules:
   dice/o/mask:
-    _target_: sparse2d.losses.DiceLoss
+    _target_: sparserefine.losses.DiceLoss
     output_key: logits/o/mask
     target_key: label/mask
     ignore_index: ${data.ignore_index}
 
   dice/e/mask:
-    _target_: sparse2d.losses.DiceLoss
+    _target_: sparserefine.losses.DiceLoss
     output_key: logits/e/mask
     target_key: label/mask
     ignore_index: ${data.ignore_index}
