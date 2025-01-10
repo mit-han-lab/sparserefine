@@ -40,7 +40,7 @@ NOTE: If your data layout differs from the default configuration, you may need t
 
 ### Training
 
-The configuration files for various models can be found in the *configs/experiment* folder. To run a specific model, simply change the experiment option for each run. For instance, to execute the HRNet model, use the following command:
+The configuration files for various models can be found in the *configs/experiment* folder. To run a specific model, simply change the experiment option for each run. To run without docker, simply remove the "./run.sh" from the following command. For instance, to execute the HRNet model, use the following command:
 
 ```
 ./run.sh python scripts/train.py +experiment=cityscapes_hrnet48
